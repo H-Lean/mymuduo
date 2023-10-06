@@ -18,12 +18,11 @@ cd ..
 if [ ! -d /usr/include/mymuduo ]; then
     mkdir /usr/include/mymuduo
 fi
-
 for header in `ls *.h`
 do
     cp $header /usr/include/mymuduo
 done
-# so库拷贝到 /usr/lib
+# so库拷贝到 /usr/lib（环境变量路径）
 cp `pwd`/lib/libmymuduo.so /usr/lib
-
+# 刷新
 ldconfig
