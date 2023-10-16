@@ -10,10 +10,10 @@ rm -rf `pwd`/build/*
 cd `pwd`/build/ && 
     cmake .. &&
     make
-
-# 回到项目根目录
+# 返回根目录
 cd ..
 
+# 头文件和so库都复制到系统路径
 # 头文件拷贝到 /usr/include/mymuduo
 if [ ! -d /usr/include/mymuduo ]; then
     mkdir /usr/include/mymuduo

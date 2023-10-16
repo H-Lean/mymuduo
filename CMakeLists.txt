@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.5)
+cmake_minimum_required(VERSION 2.8.12)
 project(mymuduo)
 
 # cmake 生成 makefile 然后make，所以要清理清理项目的配置再编译，就会更新要编译的新添加文件

@@ -10,7 +10,7 @@
 
 ### 项目编译
 
-执行`autobuild.sh`
+执行`autobuild.sh`编译muduo网络库
 
 ### 项目测试
 
@@ -37,12 +37,16 @@ telnet 127.0.0.1 8000
 
 
 
-## 文件描述
-
-CMakeLists.txt是cmake脚本，生成**lib**文件夹包含.so动态库
-
-autobuild.sh自动编译，生成**build**文件夹，调用make
-
-
-
 ## 技术描述
+
+-   cmake构建将muduo头文件和库文件加载到系统环境变量，支持用户自定义测试文件
+-   
+
+
+
+
+
+
+
+
+

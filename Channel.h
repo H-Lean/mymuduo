@@ -54,7 +54,7 @@ public:
     bool isReading() const { return events_ & kReadEvent;  }
 
     // 成员赋值
-    int set_revents(int revt) { revents_ = revt; } // poller监听revents，所以channel要提供接口来设置
+    void set_revents(int revt) { revents_ = revt; } // poller监听revents，所以channel要提供接口来设置
     void set_index(int idx) { index_ = idx; }
 
     // one loop per thread
